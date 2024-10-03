@@ -15,6 +15,15 @@ android {
     }
 
     buildTypes {
+        debug {
+            sourceSets{
+                getByName("main"){
+                    manifest.srcFile("src/debug/AndroidManifest.xml")
+                    res.srcDirs("src/debug/res")
+                    java.srcDirs(listOf("src/main/java","src/debug/java"))
+                }
+            }
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -30,6 +39,7 @@ android {
 }
 
 dependencies {
+    debugImplementation(project(":ToolComponents:Toaster"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

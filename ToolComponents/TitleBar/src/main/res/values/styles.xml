@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleBarDefaultStyle">
+        <item name="android:background">@drawable/bar_drawable_placeholder</item>
+        <item name="leftIcon">@drawable/bar_drawable_placeholder</item>
+        <item name="leftBackground">@drawable/bar_drawable_placeholder</item>
+        <item name="rightBackground">@drawable/bar_drawable_placeholder</item>
+        <item name="title">@string/bar_string_placeholder</item>
+        <item name="leftTitle">@string/bar_string_placeholder</item>
+        <item name="rightTitle">@string/bar_string_placeholder</item>
+        <item name="lineDrawable">@drawable/bar_drawable_placeholder</item>
+        <item name="titleOverflowMode">marquee</item>
+        <item name="leftTitleOverflowMode">end</item>
+        <item name="rightTitleOverflowMode">end</item>
+    </style>
+</resources>
